@@ -93,7 +93,7 @@ def copy_html_and_css():
             display_header()
             continue
         elif next_action == "2":
-            print("\n👋 Exiting tool... Stay safe hacker 🕶️")
+            print("\n👋 Exiting tool... You will remember me ☠️")
             break
         else:
             print("❌ Invalid option. Exiting.")
