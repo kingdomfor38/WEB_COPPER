@@ -21,13 +21,13 @@ def loading_animation():
 
 def display_header():
     print("\033[1;32m╔═════════════════════════════════════╗")
-    print("║     HTML + CSS COPY TOOL v2.1      ║")
+    print("║     WEB_COPPER    ║")
     print("╚═════════════════════════════════════╝")
-    print("\033[0;91m         DEVELOPED BY OLD HACKER\033[0m\n")
+    print("\033[0;91m         DEVELOPED BY DARK ARMY\033[0m\n")
 
 def main_menu():
-    print("\033[1;36m[1] COPY WEBSITE HTML + CSS")
-    print("[2] JOIN TOOL OWNER WHATSAPP CHANNEL\033[0m")
+    print("\033[1;36m[1] COPY WEBSITES ALL CODES")
+    print("[2] JOIN OUR CHANNEL\033[0m")
     return input("\n📥 ENTER OPTION (1/2): ").strip()
 
 def post_copy_menu():
@@ -58,9 +58,9 @@ def copy_html_and_css():
             css_files = [urljoin(url, link.get("href")) for link in css_links if link.get("href")]
 
             if not css_files:
-                print("⚠️ No CSS files found.")
+                print("⚠️ No files found.")
             else:
-                print("\n📦 Downloading all CSS files...\n")
+                print("\n📦 Downloading all files...\n")
                 total_files = len(css_files)
                 downloaded_kb = 0
 
@@ -76,11 +76,11 @@ def copy_html_and_css():
 
                         percent = int(((i + 1) / total_files) * 100)
                         bar = "█" * (percent // 5) + '-' * (20 - (percent // 5))
-                        print(f"\r⏳ Downloading CSS: [{bar}] {percent}% ({downloaded_kb} KB)", end='', flush=True)
+                        print(f"\r⏳ Downloading : [{bar}] {percent}% ({downloaded_kb} KB)", end='', flush=True)
                     except Exception as e:
-                        print(f"\n❌ Failed to download CSS: {css_url}\nError: {e}")
+                        print(f"\n❌ Failed to download : {css_url}\nError: {e}")
 
-                print("\n✅ All CSS files downloaded!")
+                print("\n✅ All files downloaded!")
 
             print("📁 Files saved in DCIM/copied_site folder")
 
@@ -100,13 +100,13 @@ def copy_html_and_css():
             break
 
 def open_whatsapp_channel():
-    print("\n📲 Opening WhatsApp Channel...")
+    print("\n📲  WhatsApp Channel...")
     try:
-        os.system("termux-open-url https://whatsapp.com/channel/0029VavHzv259PwTIz1XxJ09")
+        os.system("termux-open-url https://whatsapp.com/channel/0029ValiPhTC1Fu3qoMKck3b")
     except Exception as e:
         print(f"❌ Failed to open link: {e}")
 
-# ==== RUN TOOL ====
+# ==== START ====
 clear_screen()
 loading_animation()
 clear_screen()
